@@ -1,69 +1,40 @@
-<head><script defer src="main.bundle.js"></script><script defer src="install.bundle.js"></script><meta name="theme-color" content="#225ca3" /><link rel="manifest" href="/manifest.json" /></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve '/Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/html-webpack-plug  in/lib/loader.js' in '/Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client'
-  ModuleNotFoundError: Module not found: Error: Can't resolve '/Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modu  les/html-webpack-plugin/lib/loader.js' in '/Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client'
-      at /Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/webpack/lib/Compilation.js:2016:28
-      at /Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/webpack/lib/NormalModuleFactory.js:798:13
-      at eval (eval at create (/Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/tapable/lib/HookCodeFactory.  js:33:10), <anonymous>:10:1)
-      at /Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/webpack/lib/NormalModuleFactory.js:270:22
-      at eval (eval at create (/Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/tapable/lib/HookCodeFactory.  js:33:10), <anonymous>:9:1)
-      at /Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/webpack/lib/NormalModuleFactory.js:434:22
-      at /Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/webpack/lib/NormalModuleFactory.js:116:11
-      at /Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/webpack/lib/NormalModuleFactory.js:635:23
-      at /Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/neo-async/async.js:2830:7
-      at done (/Users/Praveen/Documents/bootcamp/homework/homework15-texteditor/client/node_modules/neo-async/async.js:2925:13)
-  
-  - Compilation.js:2016 
-    [client]/[webpack]/lib/Compilation.js:2016:28
-  
-  - NormalModuleFactory.js:798 
-    [client]/[webpack]/lib/NormalModuleFactory.js:798:13
-  
-  
-  - NormalModuleFactory.js:270 
-    [client]/[webpack]/lib/NormalModuleFactory.js:270:22
-  
-  
-  - NormalModuleFactory.js:434 
-    [client]/[webpack]/lib/NormalModuleFactory.js:434:22
-  
-  - NormalModuleFactory.js:116 
-    [client]/[webpack]/lib/NormalModuleFactory.js:116:11
-  
-  - NormalModuleFactory.js:635 
-    [client]/[webpack]/lib/NormalModuleFactory.js:635:23
-  
-  - async.js:2830 
-    [client]/[neo-async]/async.js:2830:7
-  
-  - async.js:2925 done
-    [client]/[neo-async]/async.js:2925:13
-  
-  - child-compiler.js:169 
-    [client]/[html-webpack-plugin]/lib/child-compiler.js:169:18
-  
-  - Compiler.js:551 finalCallback
-    [client]/[webpack]/lib/Compiler.js:551:5
-  
-  - Compiler.js:577 
-    [client]/[webpack]/lib/Compiler.js:577:11
-  
-  - Compiler.js:1196 
-    [client]/[webpack]/lib/Compiler.js:1196:17
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [client]/[tapable]/lib/Hook.js:18:14
-  
-  - Compiler.js:1192 
-    [client]/[webpack]/lib/Compiler.js:1192:33
-  
-  - Compilation.js:2787 finalCallback
-    [client]/[webpack]/lib/Compilation.js:2787:11
-  
-  - Compilation.js:3092 
-    [client]/[webpack]/lib/Compilation.js:3092:11
-  
-  
-</pre>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J.A.T.E</title>
+    
+      <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css">
+      </link>
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js">
+      </script>
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/javascript/javascript.min.js">
+      </script>
+      <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/theme/monokai.min.css">
+      </link>
+  <script defer src="main.bundle.js"></script><script defer src="install.bundle.js"></script><meta name="theme-color" content="#225ca3" /><link rel="manifest" href="/manifest.json" /></head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-btn">
+        <a class="btn btn-sm btn-dark" id="buttonInstall" role="button">Install!</a>
+      </div>
+     <h1> Just Another Text Editor</h1>
+     
+      <div class="navbar-brand" 
+            ><img src="./assets/icons/icon_96x96.png"
+          /></div>
+    </nav>
+
+    <main id="main">
+      <div class="loading-container">
+        <div class="loading-spinner"></div>
+      </div>
+    </main>
+    
+  </body>
+</html>
