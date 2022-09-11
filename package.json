@@ -8,7 +8,7 @@
     "start": "npm run build && cd server && npm run server",
     "server": "",
     "build": "cd client && npm run build",
-    "install": "",
+    "install": "cd client && npm install",
     "client": ""
   },
   "keywords": [],
