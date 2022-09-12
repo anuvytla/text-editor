@@ -14,9 +14,9 @@ Checkout the app [here](https://jate-anu.herokuapp.com/).
 
 * [Usage](#usage)
 
-* [Built With](#Built-With)
+* [Built With](#built-with)
 
-* [Author](#Author)
+* [Author](#author)
 
 
 
